@@ -3,7 +3,7 @@ import "../styles/global.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scheme-light-dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -11,14 +11,7 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
   </head>
-  <body>
+  <body class="bg-[#17171B]">
     <slot />
   </body>
 </html>
-
-<script>
-  // This script is used to set the theme based on the user's preference
-  const userTheme = localStorage.getItem("theme") || "light";
-  document.documentElement.setAttribute("data-theme", userTheme);
-  document.documentElement.classList.add(userTheme);
-</script>
