@@ -1,12 +1,104 @@
 ---
-
+import cr01 from "../assets/carousel/cr-01.jpg";
+import cr02 from "../assets/carousel/cr-02.jpg";
+import cr03 from "../assets/carousel/cr-03.jpg";
 ---
 
-<section class="overflow-x-auto md:overflow-x-visible scroll-smooth py-16 flex flex-col gap-4 items-center">
-    <h2 class="font-bold text-[28px] ">Productos Destacados</h2>
-    <div class="flex flex-col md:flex-row gap-4 items-center justify-center">
-        <div class="bg-red-600 w-[350px] h-2.5"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+<section
+  class="overflow-x-auto md:overflow-x-visible scroll-smooth pt-16 flex flex-col items-center"
+>
+  <h2 class="font-bold text-[28px]">Productos Destacados</h2>
+  <div class="w-full max-w-4xl pt-16">
+    <div
+      class="flex gap-6 scroll-smooth snap-x snap-mandatory overflow-x-auto md:overflow-x-visible md:gap-8 md:justify-center md:snap-none md:scroll-auto"
+      style="scroll-behavior: smooth;"
+      id="carousel-container"
+    >
+      <!-- card1 -->
+      <div
+        class="bg-[#383A3D] w-[350px] h-[457px] flex-shrink-0 snap-center ml-[7.5px] rounded-3xl shadow-2xl md:ml-0 md:snap-none md:flex-shrink md:static"
+      >
+        <div class="w-full h-[279px] overflow-hidden">
+          <img
+            src={cr01.src}
+            alt=""
+            class="w-full h-80 object-cover rounded-t-[24px] object-[50%_20%]"
+          />
+        </div>
+        <div
+          class="w-full h-[178px] rounded-br-[24px] rounded-bl-[24px] p-4 flex flex-col gap-2"
+        >
+          <h2 class="text-lg font-semibold">Producto</h2>
+          <h3 class="text-base text-white/90">29.999$</h3>
+          <p class="text-sm text-white/60">6 cuotas sin interés de $25.999</p>
+          <button
+            class="mt-2 self-start px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200 transition"
+            >comprar</button
+          >
+        </div>
+      </div>
+      <!-- card2 -->
+      <div
+        class="bg-[#383A3D] w-[350px] h-[457px] flex-shrink-0 snap-center rounded-3xl shadow-2xl md:snap-none md:flex-shrink md:static"
+      >
+        <div class="w-full h-[279px] overflow-hidden">
+          <img
+            src={cr02.src}
+            alt=""
+            class="w-full h-80 object-cover rounded-t-[24px] object-[50%_20%]"
+          />
+        </div>
+        <div
+          class="w-full h-[178px] rounded-br-[24px] rounded-bl-[24px] p-4 flex flex-col gap-2"
+        >
+          <h2 class="text-lg font-semibold">Producto</h2>
+          <h3 class="text-base text-white/90">29.999$</h3>
+          <p class="text-sm text-white/60">6 cuotas sin interés de $25.999</p>
+          <button
+            class="mt-2 self-start px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200 transition"
+            >comprar</button
+          >
+        </div>
+      </div>
+      <!-- card3 -->
+      <div
+        class="bg-[#383A3D] w-[350px] h-[457px] flex-shrink-0 snap-center mr-[7.5px] rounded-3xl shadow-2xl md:mr-0 md:snap-none md:flex-shrink md:static"
+      >
+        <div class="w-full h-[279px] overflow-hidden">
+          <img
+            src={cr03.src}
+            alt=""
+            class="w-full h-80 object-cover rounded-t-[24px] object-[50%_20%]"
+          />
+        </div>
+        <div
+          class="w-full h-[178px] rounded-br-[24px] rounded-bl-[24px] p-4 flex flex-col gap-2"
+        >
+          <h2 class="text-lg font-semibold">Producto</h2>
+          <h3 class="text-base text-white/90">29.999$</h3>
+          <p class="text-sm text-white/60">6 cuotas sin interés de $25.999</p>
+          <button
+            class="mt-2 self-start px-4 py-2 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200 transition"
+            >comprar</button
+          >
+        </div>
+      </div>
     </div>
-</section>  
+  </div>
+</section>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById("carousel-container");
+    if (container) {
+      const middle = container.children[1];
+      if (middle) {
+        middle.scrollIntoView({
+          inline: "center",
+          behavior: "smooth",
+          block: "nearest",
+        });
+      }
+    }
+  });
+</script>
