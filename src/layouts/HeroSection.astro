@@ -13,7 +13,7 @@ import NavBar from "../components/NavBar.astro";
   class="w-full grid grid-cols-12 h-[740px] max-sm:h-max p-6 max-sm:p-2 gap-4"
 >
   <article
-    class="bg-[url('assets/img/hero-section-image.webp')] bg-cover bg-center
+    class="bg-[url('/assets/img/hero-section-image.webp')] bg-cover bg-center
  h-full flex flex-col items-center col-span-9 max-xl:col-span-12 rounded-4xl py-4 max-xl:h-[620px] max-sm:h-[560px]"
   >
     <NavBar />
@@ -56,16 +56,17 @@ import NavBar from "../components/NavBar.astro";
     class="flex flex-col justify-center items-center w-full h-full max-xl:h-[390px] max-xl:flex-row col-span-3 gap-4 max-xl:col-span-12 max-sm:hidden"
   >
     <picture
-      class="bg-[url('assets/img/hero-section-image-box-m.webp')] bg-cover bg-center w-full h-full rounded-4xl"
+      class="bg-[url('/assets/img/hero-section-image-box-m.webp')] bg-cover bg-center w-full h-full rounded-4xl"
     ></picture>
     <picture
-      class="bg-[url('assets/img/hero-section-image-box-h.webp')] bg-cover bg-center w-full h-full rounded-4xl"
+      class="bg-[url('/assets/img/hero-section-image-box-h.webp')] bg-cover bg-center w-full h-full rounded-4xl"
     >
     </picture>
   </article>
 </section>
+
 <nav
-  class="px-4 hidden max-md:flex justify-between items-center backdrop-blur-xl bottom-0 sticky rounded-full h-15 w-full text-lg max-sm:text-base bg-white/20"
+  class="px-4 hidden max-md:flex justify-between items-center backdrop-blur-xl bottom-0 fixed rounded-full h-15 w-full text-lg max-sm:text-base bg-white/20"
 >
   <a href=""><IconContact class="w-8" /></a>
   <a href=""><IconQuestion class="w-8" /></a>
