@@ -1,0 +1,11 @@
+---
+interface Props {
+  href: string;
+  text: string;
+}
+---
+
+<a
+  class="text-[22px] max-sm:text-lg w-max bg-white/80 text-black font-semibold px-10 py-1 rounded-full"
+  href={Astro.props.href}>{Astro.props.text}</a
+>

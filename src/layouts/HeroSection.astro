@@ -1,0 +1,75 @@
+---
+import IconCategory from "../../public/assets/svg/IconCategory.astro";
+import IconContact from "../../public/assets/svg/IconContact.astro";
+import IconHome from "../../public/assets/svg/IconHome.astro";
+import IconQuestion from "../../public/assets/svg/IconQuestion.astro";
+import IconSearch from "../../public/assets/svg/IconSearch.astro";
+import IconUs from "../../public/assets/svg/IconUs.astro";
+import BtnPrimary from "../components/BtnPrimary.astro";
+import NavBar from "../components/NavBar.astro";
+---
+
+<section
+  class="w-full grid grid-cols-12 h-[740px] max-sm:h-max p-6 max-sm:p-2 gap-4"
+>
+  <article
+    class="bg-[url('assets/img/hero-section-image.webp')] bg-cover bg-center
+ h-full flex flex-col items-center col-span-9 max-xl:col-span-12 rounded-4xl py-4 max-xl:h-[620px] max-sm:h-[560px]"
+  >
+    <NavBar />
+
+    <div
+      class="h-full flex flex-col justify-center items-center gap-4 px-6 max-sm:justify-end max-sm:mb-12"
+    >
+      <h1
+        class="text-5xl max-xl:text-[40px] max-sm:text-4xl font-semibold text-center"
+      >
+        <span class="text-[#9EA3BE]">Tu estilo, </span>sin esfuerzo.
+      </h1>
+      <p class="text-2xl text-[#E7E7E7] max-sm:text-lg font-medium">
+        Ropa estilo urbana
+      </p>
+
+      <label for="search" class="relative w-[450px] max-sm:w-full mt-4">
+        <input
+          id="search"
+          type="text"
+          placeholder="Buscar..."
+          class="backdrop-blur-xl rounded-full h-10 w-full pr-12 pl-5 text-lg max-sm:text-base bg-white/20 placeholder:text-white text-white"
+        />
+        <div class="absolute right-4 top-1/2 -translate-y-1/2 text-white">
+          <IconSearch class="w-5 h-5" />
+        </div>
+      </label>
+    </div>
+
+    <footer
+      class="flex justify-between items-center w-full px-12 max-md:flex-col gap-4"
+    >
+      <img src="/assets/svg/LogoClub6.svg" class="max-sm:w-[120px]" alt="" />
+      <BtnPrimary href="/" text="Unite al Club" />
+      <span class="w-[140px]"></span>
+    </footer>
+  </article>
+
+  <article
+    class="flex flex-col justify-center items-center w-full h-full max-xl:h-[390px] max-xl:flex-row col-span-3 gap-4 max-xl:col-span-12 max-sm:hidden"
+  >
+    <picture
+      class="bg-[url('assets/img/hero-section-image-box-m.webp')] bg-cover bg-center w-full h-full rounded-4xl"
+    ></picture>
+    <picture
+      class="bg-[url('assets/img/hero-section-image-box-h.webp')] bg-cover bg-center w-full h-full rounded-4xl"
+    >
+    </picture>
+  </article>
+</section>
+<nav
+  class="px-4 hidden max-md:flex justify-between items-center backdrop-blur-xl bottom-0 sticky rounded-full h-15 w-full text-lg max-sm:text-base bg-white/20"
+>
+  <a href=""><IconContact class="w-8" /></a>
+  <a href=""><IconQuestion class="w-8" /></a>
+  <a href=""><IconHome class="w-10 fill-[#B6BDDE]" /></a>
+  <a href=""><IconCategory class="w-8" /></a>
+  <a href=""><IconUs class="w-8" w /></a>
+</nav>
