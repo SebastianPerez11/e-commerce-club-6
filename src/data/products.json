@@ -1,0 +1,53 @@
+
+
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Remera Lisa",
+            "price": 29.999,
+            "category": "Remeras",
+            "image": "remera-lisa-negra.jpg",
+            "description": "Remera lisa de algodón, ideal para el uso diario. Disponible en varios colores.",
+            "genero": "unisex",
+            "tallas": ["XS", "S", "M", "L", "XL"],
+            "colores": ["blanco", "negro"],
+            "etiquetas": ["cuero", "elegante", "urbano"],
+            "stock": 50,
+            "calificacion": 4.5,
+            "cuotas": {
+                "cantidad": 6,
+                "interes": 0.0,
+                "montoTotal": 32.000
+            }
+        },
+        {
+            "id": 2,
+            "name": "Remera Lisa",
+            "price": 29.999,
+            "category": "Remeras",
+            "image": "top-negro-liso.jpg",
+            "description": "Remera lisa de algodón, ideal para el uso diario. Disponible en varios colores.",
+            "genero": "mujer",
+            "tallas": ["XS", "S", "M", "L", "XL"],
+            "colores": ["blanco", "negro"],
+            "etiquetas": ["cuero", "elegante", "urbano"],
+            "stock": 50,
+            "calificacion": 4.5
+        },
+        {
+            "id": 3,
+            "name": "Remera Lisa",
+            "price": 29.999,
+            "category": "Remeras",
+            "image": "remera-lisa-blanca.jpg",
+            "description": "Remera lisa de algodón, ideal para el uso diario. Disponible en varios colores.",
+            "genero": "unisex",
+            "tallas": ["XS", "S", "M", "L", "XL"],
+            "colores": ["blanco", "negro"],
+            "etiquetas": ["cuero", "elegante", "urbano"],
+            "stock": 50,
+            "calificacion": 4.5
+        }
+    ]
+}
