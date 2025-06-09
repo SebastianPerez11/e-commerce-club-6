@@ -1,0 +1,11 @@
+---
+interface Props {
+  href: string;
+  text: string;
+  class?: string;
+}
+---
+
+<li class=`${Astro.props.class} rounded-full px-8 h-full flex items-center`>
+  <a href={Astro.props.href}>{Astro.props.text}</a>
+</li>
