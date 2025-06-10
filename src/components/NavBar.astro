@@ -1,0 +1,17 @@
+---
+import LinkNavBar from "./LinkNavBar.astro";
+---
+
+<header class="mt-2.5 px-6 max-md:hidden">
+  <nav>
+    <ul
+      class="flex justify-between items-center h-12 max-lg:w-full w-[860px] p-1 rounded-full backdrop-blur-xl bg-white/20 text-lg"
+    >
+      <LinkNavBar href="/" text="Inicio" class="bg-black" />
+      <LinkNavBar href="/catalogo" text="Catalogo" />
+      <LinkNavBar href="/sobre-nosotros" text="Sobre Nosotros" />
+      <LinkNavBar href="/preguntas-frecuentes" text="Preguntas Frecuentes" />
+      <LinkNavBar href="/contacto" text="Contacto" />
+    </ul>
+  </nav>
+</header>
