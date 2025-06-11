@@ -2,6 +2,8 @@ const express = require('express');
 require('dotenv').config();
 const connectDB = require('./config/db');
 const usersRouter = require('./api/users');
+const path = require('path');
+
 
 // Crear servidor
 const app = express();
@@ -16,6 +18,7 @@ app.use(express.json());
 // Rutas
 app.use('/api/products', require('./api/products'));
 app.use('/api/users', usersRouter);
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Ruta raíz
 app.get('/', (req, res) => {

@@ -17,6 +17,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.17.0",
     "mongoose": "^8.15.1",
+    "multer": "^2.0.1",
     "tailwindcss": "^4.1.8"
   }
 }
