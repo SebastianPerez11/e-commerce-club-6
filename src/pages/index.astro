@@ -1,9 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroSection from "../layouts/HeroSection.astro";
+import NavBarMobile from "../components/NavBarMobile.astro";
+import AboutUsSection from "../layouts/AboutUsSection.astro";
 ---
 
 <Layout>
-  <HeroSection />
+  <main
+    class="w-full flex flex-col items-center gap-6 px-8 py-6 max-sm:gap-4 max-sm:px-2 max-sm:py-4"
+  >
+    <HeroSection />
+    <AboutUsSection />
+  </main>
 </Layout>
 
+<NavBarMobile />
